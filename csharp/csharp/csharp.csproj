@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>EAProject.Program</StartupObject>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Configurations>Debug;Release;example</Configurations>
+  </PropertyGroup>
+
+
+	<Target Name="MoveIPP" AfterTargets="Build">
+		<ItemGroup>
+			<IppFiles Include ="C:\Program Files\HBK\EA Engine\ipp*-8.0.dll"/>
+		</ItemGroup>
+		<Copy SourceFiles="@(IppFiles)" DestinationFolder="$(OutDir)"/>
+	</Target>
+		
+
+  <ItemGroup>
+    <PackageReference Include="AudioSwitcher.AudioApi.CoreAudio" Version="3.0.3" />
+    <PackageReference Include="OxyPlot.Core" Version="2.1.2" />
+    <PackageReference Include="OxyPlot.WindowsForms" Version="2.1.2" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BQC4149DotNetInterface">
+		<HintPath>C:\Program Files\HBK\EA Engine\BQC4149DotNetInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="EA Engine Force Sample Rate">
+		<HintPath>C:\Program Files\HBK\EA Engine\EA Engine Force Sample Rate.exe</HintPath>
+    </Reference>
+    <Reference Include="EA_Engine">
+		<HintPath>C:\Program Files\HBK\EA Engine\EA_Engine.exe</HintPath>
+    </Reference>
+    <Reference Include="HDF.PInvoke">
+		<HintPath>C:\Program Files\HBK\EA Engine\HDF.PInvoke.dll</HintPath>
+    </Reference>
+    <Reference Include="Hdf5DotNetTools">
+		<HintPath>C:\Program Files\HBK\EA Engine\Hdf5DotNetTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Ipp Wrapper">
+		<HintPath>C:\Program Files\HBK\EA Engine\Ipp Wrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+		<HintPath>C:\Program Files\HBK\EA Engine\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+		<HintPath>C:\Program Files\HBK\EA Engine\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="PtdCommonDotNet">
+		<HintPath>C:\Program Files\HBK\EA Engine\PtdCommonDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Signal Processing Library">
+		<HintPath>C:\Program Files\HBK\EA Engine\Signal Processing Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Sound Quality Library">
+		<HintPath>C:\Program Files\HBK\EA Engine\Sound Quality Library.dll</HintPath>
+    </Reference>
+    <Reference Include="ippcore-8.0">
+		<HintPath>C:\Program Files\HBK\EA Engine\ippcore-8.0.dll</HintPath>
+    </Reference>
+    <Reference Include="ippm-8.0">
+		<HintPath>C:\Program Files\HBK\EA Engine\ippm-8.0.dll</HintPath>
+    </Reference>
+    <Reference Include="ipps-8.0">
+		<HintPath>C:\Program Files\HBK\EA Engine\ipps-8.0.dll</HintPath>
+    </Reference>
+    <Reference Include="ippsmx-8.0">
+		<HintPath>C:\Program Files\HBK\EA Engine\ippsmx-8.0.dll</HintPath>
+    </Reference>
+    <Reference Include="ippvm-8.0">
+		<HintPath>C:\Program Files\HBK\EA Engine\ippvm-8.0.dll</HintPath>
+    </Reference>
+    <Reference Include="ippvme9-8.0">
+		<HintPath>C:\Program Files\HBK\EA Engine\ippvme9-8.0.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+	
+</Project>

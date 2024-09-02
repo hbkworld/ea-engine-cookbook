@@ -1,0 +1,12 @@
+PyQt5
+pythonnet
+pypiwin32
+pywin32
+pyqtgraph
+numpy 
+scipy
+sounddevice
+pyaudio
+librosa
+soundfile
+wave

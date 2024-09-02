@@ -1,0 +1,2532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1441</width>
+    <height>1041</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1240</width>
+    <height>837</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>EA Engine Demonstrator</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1421</width>
+     <height>1021</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_1">
+    <attribute name="title">
+     <string>Setup</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_Devices">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>1411</width>
+       <height>108</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Devices</string>
+     </property>
+     <widget class="QPushButton" name="pushButton_UseSelectedDevice">
+      <property name="geometry">
+       <rect>
+        <x>1140</x>
+        <y>60</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Use Selected Device</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_DetectDevices">
+      <property name="geometry">
+       <rect>
+        <x>1140</x>
+        <y>16</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Detect Devices</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget_Devices">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>16</y>
+        <width>1121</width>
+        <height>81</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_Reset">
+      <property name="geometry">
+       <rect>
+        <x>1270</x>
+        <y>70</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reset Channel Settings</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_Inputs">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>120</y>
+       <width>1411</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Inputs</string>
+     </property>
+     <widget class="QTableWidget" name="tableWidget_Inputs">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>23</y>
+        <width>1391</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="columnCount">
+       <number>0</number>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_Outputs">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>530</y>
+       <width>1411</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Outputs</string>
+     </property>
+     <widget class="QTableWidget" name="tableWidget_Outputs">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>23</y>
+        <width>1391</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+      <property name="columnCount">
+       <number>0</number>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Save">
+     <property name="geometry">
+      <rect>
+       <x>1290</x>
+       <y>950</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Save Channel Settings</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Input Channel Calibration</string>
+    </attribute>
+    <widget class="GraphicsLayoutWidget" name="graphicsView_InputCalibration">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1391</width>
+       <height>671</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_InputCalibration">
+     <property name="geometry">
+      <rect>
+       <x>1290</x>
+       <y>940</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calibrate</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget_InputCalibration">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>695</y>
+       <width>1141</width>
+       <height>291</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_InputCalibration">
+     <property name="geometry">
+      <rect>
+       <x>1160</x>
+       <y>690</y>
+       <width>241</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Settings</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_1">
+       <item>
+        <widget class="QLabel" name="label_RefFrequency">
+         <property name="text">
+          <string>Ref. Frequency (Hz):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_RefFrequency">
+         <property name="text">
+          <string>1000</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_RefLevel">
+         <property name="text">
+          <string>Ref. Level:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_RefLevel">
+         <property name="text">
+          <string>94</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_RefLevelUnit">
+         <item>
+          <property name="text">
+           <string>dB</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Pa</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>80</y>
+        <width>123</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_Duration_InputCalibration">
+         <property name="text">
+          <string>Duration (s):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_Duration_InputCalibration">
+         <property name="text">
+          <string>10</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>210</y>
+        <width>144</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_ResultFormat_InputCalibration">
+         <property name="text">
+          <string>Result Format:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_ResultsFormat_InputCalibration">
+         <item>
+          <property name="text">
+           <string>CSV</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>XML</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MATLAB</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>180</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_FFTBlocksize">
+         <property name="text">
+          <string>FFT Blocksize:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_FFTBlocksize">
+         <property name="currentIndex">
+          <number>3</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>1024</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2048</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4096</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>8192</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>16384</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>120</y>
+        <width>161</width>
+        <height>47</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_1">
+       <item>
+        <widget class="QCheckBox" name="checkBox_HarmonicsTHD">
+         <property name="text">
+          <string>Calculate THD</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLabel" name="label_HarmonicsTHD">
+           <property name="text">
+            <string>Harmonics for THD:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_HarmonicsTHD">
+           <property name="text">
+            <string>2,3</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Output Channel Calibration</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_OutputCalibration">
+     <property name="geometry">
+      <rect>
+       <x>1290</x>
+       <y>940</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calibrate</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_OutputCalibration">
+     <property name="geometry">
+      <rect>
+       <x>1160</x>
+       <y>690</y>
+       <width>241</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Settings</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QLabel" name="label_Frequency">
+         <property name="text">
+          <string>Frequency (Hz):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_Frequency">
+         <property name="text">
+          <string>1000</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_14">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_31">
+       <item>
+        <widget class="QLabel" name="label_Level">
+         <property name="text">
+          <string>Level:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_Level">
+         <property name="text">
+          <string>0.01</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_20">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>80</y>
+        <width>123</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_37">
+       <item>
+        <widget class="QLabel" name="label_Duration_OutputCalibration">
+         <property name="text">
+          <string>Duration (s):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_Duration_OutputCalibration">
+         <property name="text">
+          <string>5</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_21">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>210</y>
+        <width>144</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_38">
+       <item>
+        <widget class="QLabel" name="label_ResultFormat_OutputCalibration">
+         <property name="text">
+          <string>Result Format:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_ResultsFormat_OutputCalibration">
+         <item>
+          <property name="text">
+           <string>CSV</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>XML</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MATLAB</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_22">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>180</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_39">
+       <item>
+        <widget class="QLabel" name="label_FFTBlocksize_2">
+         <property name="text">
+          <string>FFT Blocksize:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_FFTBlocksize_2">
+         <property name="currentText">
+          <string>4096</string>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>1024</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2048</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4096</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>8192</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>16384</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_23">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>120</y>
+        <width>161</width>
+        <height>47</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QCheckBox" name="checkBox_HarmonicsTHD_2">
+         <property name="text">
+          <string>Calculate THD</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_40">
+         <item>
+          <widget class="QLabel" name="label_HarmonicsTHD_2">
+           <property name="text">
+            <string>Harmonics for THD:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_HarmonicsTHD_2">
+           <property name="text">
+            <string>2,3</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="listWidget_OutputCalibration">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>695</y>
+       <width>1141</width>
+       <height>291</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="GraphicsLayoutWidget" name="graphicsView_OutputCalibration">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1391</width>
+       <height>671</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Output Channel Equalization</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_OutputEqualizationVerify">
+     <property name="geometry">
+      <rect>
+       <x>1290</x>
+       <y>940</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Verify</string>
+     </property>
+    </widget>
+    <widget class="GraphicsLayoutWidget" name="graphicsView_OutputEqualization">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1391</width>
+       <height>671</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget_OutputEqualization">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>725</y>
+       <width>1141</width>
+       <height>261</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_OutputEqualization">
+     <property name="geometry">
+      <rect>
+       <x>1160</x>
+       <y>690</y>
+       <width>241</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Settings</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_24">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_41">
+       <item>
+        <widget class="QLabel" name="label_RefFrequency_2">
+         <property name="text">
+          <string>Ref. Frequency (Hz):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_RefFrequency_2">
+         <property name="text">
+          <string>-1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_25">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_42">
+       <item>
+        <widget class="QLabel" name="label_Fmin_Output_Equalization">
+         <property name="text">
+          <string>Fmin  (Hz):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_Fmin_Output_Equalization">
+         <property name="text">
+          <string>80</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_27">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>210</y>
+        <width>144</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_44">
+       <item>
+        <widget class="QLabel" name="label_ResultFormat_OutputEqualization">
+         <property name="text">
+          <string>Result Format:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_ResultsFormat_OutputEqualization">
+         <item>
+          <property name="text">
+           <string>CSV</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>XML</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MATLAB</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_28">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>180</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_45">
+       <item>
+        <widget class="QLabel" name="label_FFTBlocksize_3">
+         <property name="text">
+          <string>FFT Blocksize:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_FFTBlocksize_3">
+         <property name="currentText">
+          <string>4096</string>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>1024</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2048</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4096</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>8192</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>16384</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_26">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>80</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_43">
+       <item>
+        <widget class="QLabel" name="label_Fmax_Output_Equalization">
+         <property name="text">
+          <string>Fmax  (Hz):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_Fmax_Output_Equalization">
+         <property name="text">
+          <string>10000</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_29">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>110</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_46">
+       <item>
+        <widget class="QLabel" name="label_FilterLength_Output_Equalization">
+         <property name="text">
+          <string>Filter Length:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_FilterLength_Output_Equalization">
+         <property name="text">
+          <string>8193</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_30">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>140</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_47">
+       <item>
+        <widget class="QCheckBox" name="checkBox_Latencies_Equalization">
+         <property name="text">
+          <string>Remove Latencies</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_OutputEqualization">
+     <property name="geometry">
+      <rect>
+       <x>1170</x>
+       <y>940</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Equalize</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Info_Output_Equalization">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>690</y>
+       <width>831</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>Random Noise Test</string>
+    </attribute>
+    <widget class="GraphicsLayoutWidget" name="graphicsView_RandomNoiseTest">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1391</width>
+       <height>701</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget_RandomNoiseTest">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>735</y>
+       <width>1031</width>
+       <height>251</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_RandomNoiseTest">
+     <property name="geometry">
+      <rect>
+       <x>1300</x>
+       <y>950</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget_RandomNoiseTest">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>737</y>
+       <width>241</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_OutputSettings">
+      <widget class="QGroupBox" name="groupBox_OutputSettings_RandomNoiseTest">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>221</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Output Settings</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>141</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_SignalType">
+           <property name="text">
+            <string>Signal Type:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBo_SignalType">
+           <item>
+            <property name="text">
+             <string>White</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Pink</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>60</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="label_Level_RandomNoiseTest">
+           <property name="text">
+            <string>Level (V rms):</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_Level_RandomNoiseTest">
+           <property name="text">
+            <string>0.02</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>196</width>
+          <height>75</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QCheckBox" name="checkBox_Filtered">
+           <property name="text">
+            <string>Filtered</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QLabel" name="label_Fmin_Output_RandomNoiseTest">
+             <property name="text">
+              <string>Fmin  (Hz):</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_Fmin_Output_RandomNoiseTest">
+             <property name="text">
+              <string>80</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QLabel" name="label_Fmax_Output_RandomNosieTest">
+             <property name="text">
+              <string>Fmax (Hz):</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_Fmax_Output_RandomNoiseTest">
+             <property name="text">
+              <string>12000</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_TestSettings">
+      <widget class="QGroupBox" name="groupBox_TestSettings_RandomNoiseTest">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>221</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Test Settings</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>150</y>
+          <width>144</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLabel" name="label_ResultFormat__RandomNoiseTest">
+           <property name="text">
+            <string>Result Format:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_ResultsFormat_RandomNoiseTest">
+           <item>
+            <property name="text">
+             <string>CSV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>XML</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MATLAB</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>60</y>
+          <width>123</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_13">
+         <item>
+          <widget class="QLabel" name="label_Duration_RandomNoiseTest">
+           <property name="text">
+            <string>Duration (s):</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_Duration_RandomNoiseTest">
+           <property name="text">
+            <string>10</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_Latencies_RandomNoiseTest">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>194</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Remove Latencies</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_EQ_RandomNoiseTest">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>194</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Apply EQ</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>169</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QLabel" name="label_MeasType_RandomNoiseTest">
+           <property name="text">
+            <string>Measurement Mode:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_MeasType_RandomNoiseTest">
+           <item>
+            <property name="text">
+             <string>Spectra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FRF</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CPB</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>187</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <item>
+          <widget class="QLabel" name="label_Filename_RandomNoiseTest">
+           <property name="text">
+            <string>Filename:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_Filename_RandomNoiseTest">
+           <property name="text">
+            <string>test</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_FFTSettings">
+      <widget class="QGroupBox" name="groupBox_FFTSettings_RandomNoiseTest">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>221</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>FFT Settings</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>80</y>
+          <width>141</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_20">
+         <item>
+          <widget class="QLabel" name="label_FFTBlocksize_RandomNoiseTest">
+           <property name="text">
+            <string>FFT Blocksize:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_FFTBlocksize_RandomNoiseTest">
+           <property name="currentIndex">
+            <number>3</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>1024</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2048</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4096</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8192</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>16384</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>20</y>
+          <width>146</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_21">
+         <item>
+          <widget class="QLabel" name="label_FreqLines_RandomNoiseTest">
+           <property name="text">
+            <string>Frequency Lines:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_FreqLines_RandomNoiseTest">
+           <property name="currentText">
+            <string>4096</string>
+           </property>
+           <property name="currentIndex">
+            <number>3</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>512</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1024</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2048</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4096</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8192</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>110</y>
+          <width>143</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_23">
+         <item>
+          <widget class="QLabel" name="label_AveragingFFT_RandomNoiseTest">
+           <property name="text">
+            <string>Averaging:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_AveragingFFT_RandomNoiseTest">
+           <item>
+            <property name="text">
+             <string>Linear</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Exponential</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_9">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>170</y>
+          <width>175</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_25">
+         <item>
+          <widget class="QLabel" name="label_RefWeighting_RandomNoiseTest">
+           <property name="text">
+            <string>  Ref. Weighting:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_RefWeighting_RandomNoiseTest">
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>Uniform</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hanning</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>KaiserBessel</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Flattop</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_10">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>200</y>
+          <width>176</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_26">
+         <item>
+          <widget class="QLabel" name="label_RespWeighting_RandomNoiseTest">
+           <property name="text">
+            <string>Resp. Weighting:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_RespWeighting_RandomNoiseTest">
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>Uniform</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hanning</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>KaiserBessel</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Flattop</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>191</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_22">
+         <item>
+          <widget class="QLabel" name="label_FreqResolution_RandomNoiseTest">
+           <property name="text">
+            <string>Freq. Resolution (Hz):</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_FreqResolution_RandomNoiseTest">
+           <property name="text">
+            <string>11.71875</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>140</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_24">
+         <item>
+          <widget class="QLabel" name="label_Overlap_RandomNoiseTest">
+           <property name="text">
+            <string>Overlap:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_Overlap_RandomNoiseTest">
+           <property name="text">
+            <string>0.8</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_CPBSettings">
+      <widget class="QGroupBox" name="groupBox_CPBSettings_RandomNoiseTest">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>221</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>CPB Settings</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>80</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_18">
+         <item>
+          <widget class="QLabel" name="label_Fmax_CPB_RandomNoiseTest">
+           <property name="text">
+            <string>Fmax (Hz):</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_Fmax_CPB_RandomNoiseTest">
+           <property name="text">
+            <string>20000</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_SkipFilter_RandomNoiseTest">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>180</y>
+          <width>151</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Skip Filter Settling Data</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>20</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item>
+          <widget class="QLabel" name="label_Bandwidth_RandomNoiseTest">
+           <property name="text">
+            <string>Bandwidth:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_Bandwidth_RandomNoiseTest">
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>1/1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1/3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1/6</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1/12</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>50</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <widget class="QLabel" name="label_Fmin_CPB_RandomNoiseTest">
+           <property name="text">
+            <string>Fmin  (Hz):</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_Fmin_CPB_RandomNoiseTest">
+           <property name="text">
+            <string>20</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>143</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_19">
+         <item>
+          <widget class="QLabel" name="label_AveragingCPB_RandomNoiseTest">
+           <property name="text">
+            <string>Averaging:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_AveragingCPB_RandomNoiseTest">
+           <item>
+            <property name="text">
+             <string>Linear</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Exponential</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>140</y>
+          <width>91</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <widget class="QLabel" name="label_Tau_RandomNoiseTest">
+           <property name="text">
+            <string>Tau:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_Tau_RandomNoiseTest">
+           <property name="text">
+            <string>0.125</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Next_RandomNoiseTest">
+     <property name="geometry">
+      <rect>
+       <x>1250</x>
+       <y>715</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Previous_RandomNoiseTest">
+     <property name="geometry">
+      <rect>
+       <x>1210</x>
+       <y>715</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;&lt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Info_RandomNoiseTest">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>710</y>
+       <width>831</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>Step Sine Test</string>
+    </attribute>
+    <widget class="GraphicsLayoutWidget" name="graphicsView_StepSineTest">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1391</width>
+       <height>691</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_StepSineTest">
+     <property name="geometry">
+      <rect>
+       <x>1300</x>
+       <y>950</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Next_StepSineTest">
+     <property name="geometry">
+      <rect>
+       <x>1250</x>
+       <y>715</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;&gt;</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget_StepSineTest">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>735</y>
+       <width>1031</width>
+       <height>251</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Previous_StepSineTest">
+     <property name="geometry">
+      <rect>
+       <x>1210</x>
+       <y>715</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;&lt;</string>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget_StepSineTest">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>737</y>
+       <width>241</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_OutputSettings_2">
+      <widget class="QGroupBox" name="groupBox_OutputSettings_StepSineTest">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>221</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Output Settings</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget_11">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_27">
+         <item>
+          <widget class="QLabel" name="label_Level_StepSineTest">
+           <property name="text">
+            <string>Level (V rms):</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_Level_StepSineTest">
+           <property name="text">
+            <string>0.02</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>196</width>
+          <height>75</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_28">
+           <item>
+            <widget class="QLabel" name="label_Fstart_Output_StepSineTest">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="lineWidth">
+              <number>1</number>
+             </property>
+             <property name="text">
+              <string>Fstart  (Hz):</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_Fstart_Output_StepSineTest">
+             <property name="text">
+              <string>80</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_29">
+           <item>
+            <widget class="QLabel" name="label_Fend_Output_StepSineTest">
+             <property name="text">
+              <string>   Fend (Hz):</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_Fend_Output_StepSineTest">
+             <property name="text">
+              <string>12000</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_34">
+         <item>
+          <widget class="QLabel" name="label_Resolution_StepSineTest">
+           <property name="text">
+            <string>Resolution:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_Resolution_StepSineTest">
+           <property name="currentIndex">
+            <number>3</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>R10</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>R20</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>R40</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>R80</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>187</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_35">
+         <item>
+          <widget class="QLabel" name="label_MinCycles_StepSineTest">
+           <property name="text">
+            <string>          Min Cycles:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_MinCycles_StepSineTest">
+           <property name="text">
+            <string>12</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>187</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_36">
+         <item>
+          <widget class="QLabel" name="label_MinDuration_StepSineTest">
+           <property name="text">
+            <string>Min Duration (s) :</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_MinDuration_StepSineTest">
+           <property name="text">
+            <string>0.01</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_TestSettings_2">
+      <widget class="QGroupBox" name="groupBox_TestSettings_StepSineTest">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>221</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Test Settings</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget_13">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>150</y>
+          <width>144</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_30">
+         <item>
+          <widget class="QLabel" name="label_ResultFormat__StepSineTest">
+           <property name="text">
+            <string>Result Format:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_ResultsFormat_StepSineTest">
+           <item>
+            <property name="text">
+             <string>CSV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>XML</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MATLAB</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_Latencies_StepSineTest">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>194</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Remove Latencies</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_EQ_StepSineTest">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>194</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Apply EQ</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_15">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>169</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_32">
+         <item>
+          <widget class="QLabel" name="label_MeasType_StepSineTest">
+           <property name="text">
+            <string>Measurement Mode:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_MeasType_StepSineTest">
+           <item>
+            <property name="text">
+             <string>Spectra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FRF</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_16">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>187</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_33">
+         <item>
+          <widget class="QLabel" name="label_Filename_StepSineTest">
+           <property name="text">
+            <string>Filename:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_Filename_StepSineTest">
+           <property name="text">
+            <string>test</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_DistortionSettings">
+      <widget class="QGroupBox" name="groupBox_DistortionSettings_StepSineTest">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>221</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Distortion Settings</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>201</width>
+          <height>64</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QCheckBox" name="checkBox_THD_StepSineTest">
+           <property name="text">
+            <string>Calculate THD</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_THD_StepSineTest">
+           <property name="text">
+            <string>Harmonics for THD:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_THD_StepSineTest">
+           <property name="text">
+            <string>2,3</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>201</width>
+          <height>64</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QCheckBox" name="checkBox_RubbBuzz_StepSineTest">
+           <property name="text">
+            <string>Calculate Rubb &amp;&amp; Buzz</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_RubbBuzz_StepSineTest">
+           <property name="text">
+            <string>Harmonics for Rubb &amp; Buzz:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_RubbBuzz_StepSineTest">
+           <property name="text">
+            <string>10,11,12,13,14,15</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_Info_StepSineTest">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>710</y>
+       <width>831</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GraphicsLayoutWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>listWidget_Devices</tabstop>
+  <tabstop>pushButton_DetectDevices</tabstop>
+  <tabstop>pushButton_UseSelectedDevice</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
