@@ -10,5 +10,5 @@ The HBK-EA engine is a powerful tool for engineers and researchers working with 
 
 You will find a description in each sub-directory explaining how to get started with the examples for each language.
 
-Before you start you have to install the HBK-EA Engine and the ASIO driver. You can find the installation instructions in the [HBK-EA Engine repository](https://github.com/HBK-SLM/ea-engine)
+Before you start you have to install the HBK-EA Engine and the ASIO driver. You can find the installation instructions on the [Electroacoustic Engine Software Downloads](https://www.hbkworld.com/en/services-support/support/support-bksv/downloads/3670-usb-audio-demo-tool/bz-7852-electro-acoustic-engine)
 
